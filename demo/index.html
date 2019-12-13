@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../directed-link.js';
+
+    render(
+      html`
+        <directed-link start="36 136" end="136 36">
+        </directed-link>
+        <directed-link start="272 136" end="172 36">
+        </directed-link>
+        <directed-link start="36 154" end="136 154">
+        </directed-link>
+        <directed-link start="154 154" end="154 154">
+        </directed-link>
+        <directed-link start="36 172" end="136 272">
+        </directed-link>
+        <directed-link start="272 172" end="172 272">
+        </directed-link>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
